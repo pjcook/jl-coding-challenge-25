@@ -1,0 +1,23 @@
+{ "openingHoursSpecification":
+    [
+        {
+            "dayOfWeek":[
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens":"12:00",
+            "closes":"22:00"
+        } ,
+        {
+            "dayOfWeek":[
+                "Saturday",
+                "Sunday"
+            ],
+            "opens":"12:00",
+            "closes":"23:00"
+        }
+    ]
+}
