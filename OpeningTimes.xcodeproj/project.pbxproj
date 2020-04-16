@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		D584333324489ADF00553EA0 /* OpeningTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D584332924489ADF00553EA0 /* OpeningTimes.framework */; };
 		D584333824489ADF00553EA0 /* OpeningTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D584333724489ADF00553EA0 /* OpeningTimesTests.swift */; };
-		D584333A24489ADF00553EA0 /* OpeningTimes.h in Headers */ = {isa = PBXBuildFile; fileRef = D584332C24489ADF00553EA0 /* OpeningTimes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D584334524489B5A00553EA0 /* SimpleExample1.json in Resources */ = {isa = PBXBuildFile; fileRef = D584334424489B5A00553EA0 /* SimpleExample1.json */; };
 		D584334724489B7100553EA0 /* ComplexExample1.json in Resources */ = {isa = PBXBuildFile; fileRef = D584334624489B7100553EA0 /* ComplexExample1.json */; };
+		D584334C2448AABA00553EA0 /* SimpleExample2.json in Resources */ = {isa = PBXBuildFile; fileRef = D584334B2448AABA00553EA0 /* SimpleExample2.json */; };
+		D584334E2448AADE00553EA0 /* OpeningTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D584334D2448AADE00553EA0 /* OpeningTimes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +27,6 @@
 
 /* Begin PBXFileReference section */
 		D584332924489ADF00553EA0 /* OpeningTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpeningTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D584332C24489ADF00553EA0 /* OpeningTimes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpeningTimes.h; sourceTree = "<group>"; };
 		D584332D24489ADF00553EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D584333224489ADF00553EA0 /* OpeningTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpeningTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D584333724489ADF00553EA0 /* OpeningTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningTimesTests.swift; sourceTree = "<group>"; };
@@ -34,6 +34,8 @@
 		D584334324489B4100553EA0 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		D584334424489B5A00553EA0 /* SimpleExample1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SimpleExample1.json; sourceTree = "<group>"; };
 		D584334624489B7100553EA0 /* ComplexExample1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ComplexExample1.json; sourceTree = "<group>"; };
+		D584334B2448AABA00553EA0 /* SimpleExample2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SimpleExample2.json; sourceTree = "<group>"; };
+		D584334D2448AADE00553EA0 /* OpeningTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningTimes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,8 @@
 		D584332B24489ADF00553EA0 /* OpeningTimes */ = {
 			isa = PBXGroup;
 			children = (
-				D584332C24489ADF00553EA0 /* OpeningTimes.h */,
 				D584332D24489ADF00553EA0 /* Info.plist */,
+				D584334D2448AADE00553EA0 /* OpeningTimes.swift */,
 			);
 			path = OpeningTimes;
 			sourceTree = "<group>";
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D584334424489B5A00553EA0 /* SimpleExample1.json */,
+				D584334B2448AABA00553EA0 /* SimpleExample2.json */,
 				D584334624489B7100553EA0 /* ComplexExample1.json */,
 			);
 			name = "Json Examples";
@@ -109,7 +112,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D584333A24489ADF00553EA0 /* OpeningTimes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +166,7 @@
 				TargetAttributes = {
 					D584332824489ADF00553EA0 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					D584333124489ADF00553EA0 = {
 						CreatedOnToolsVersion = 11.4;
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D584334524489B5A00553EA0 /* SimpleExample1.json in Resources */,
+				D584334C2448AABA00553EA0 /* SimpleExample2.json in Resources */,
 				D584334724489B7100553EA0 /* ComplexExample1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D584334E2448AADE00553EA0 /* OpeningTimes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +363,7 @@
 		D584333E24489ADF00553EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6XMPZV9327;
@@ -374,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnlewis.OpeningTimes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +389,7 @@
 		D584333F24489ADF00553EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6XMPZV9327;
@@ -406,6 +414,7 @@
 		D584334124489ADF00553EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XMPZV9327;
 				INFOPLIST_FILE = OpeningTimesTests/Info.plist;
@@ -424,6 +433,7 @@
 		D584334224489ADF00553EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XMPZV9327;
 				INFOPLIST_FILE = OpeningTimesTests/Info.plist;
